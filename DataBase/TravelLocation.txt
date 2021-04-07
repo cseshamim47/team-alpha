@@ -1,0 +1,13 @@
+1.Bagerhat 2.Bandarban 3.Barguna 4.Barisal 5.Bhola
+6.Bogra 7.Brahmanbaria 8.Chandpur 9.Chittagong 10.Chuadanga
+11.Comilla 12.Cox’sBazar 13.Dhaka 14.Dinajpur 15.Faridpur
+16.Feni 17.Gaibandha 18.Gazipur 19.Gopalganj 20.Habiganj
+21.Jamalpur 22.Jessore 23.Jhalokathi 24.Jhenaidaha 25.Joypurhat
+26.Khagrachhari 27.Khulna 28.Kishoreganj 29.Kurigram 30.Kushtia
+31.Laksmipur 32.Lalmonirhat 33.Madaripur 34.Magura 35.Manikganj
+36.Meherpur 37.Moulvibazar 38.Munshiganj 39.Mymensingh 40.Naogaon
+41.Narail 42.Narayanganj 43.Natore 44.Nawabganj 45.Netrokona
+46.Nilphamari 47.Noakhali 48.Norsingdi 49.Pabna 50.Panchgarh
+51.Patuakhali 52.Pirojpur 53.Rajbari 54Rajshahi 55.Rangamati
+56.Rangour 57.Satkhira 58.Shariatpur 59.Sherpur 60.Sirajganj
+61.Sunamganj 62.Sylhet 63.Tangail 64.Thakurgaon.
