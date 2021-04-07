@@ -19,18 +19,26 @@ public class TravelLocation
         // 64 zilla
         try
         {
-            File file = new File("TravelLocation.txt");
+            File file = new File("DataBase/TravelLocation.txt");
             Scanner scanner = new Scanner(file);
+            int flag = 1;
             while(scanner.hasNext())
             {
-                String zilla = scanner.next();
+                String zilla1 = scanner.next();
+                String zilla2 = scanner.next();
+                String zilla3 = scanner.next();
+                String zilla4 = scanner.next();
+                String zilla5 = scanner.next();
                 
-                System.out.println(zilla);
+                
+                System.out.println(zilla1+" "+zilla2+" "+zilla3+" "+zilla4+" "+zilla5);
+                 
             }
+            scanner.close();
         }
         catch(Exception e)
         {
-            System.out.println(e);
+            //System.out.println(e);
         }
         
             
@@ -46,18 +54,26 @@ public class TravelLocation
         
         try
         {
-            File file = new File("TravelLocation.txt");
+            File file = new File("DataBase/TravelLocation.txt");
             Scanner scanner = new Scanner(file);
+            int flag = 1;
             while(scanner.hasNext())
             {
-                String zilla = scanner.next();
+                String zilla1 = scanner.next();
+                String zilla2 = scanner.next();
+                String zilla3 = scanner.next();
+                String zilla4 = scanner.next();
+                String zilla5 = scanner.next();
                 
-                System.out.println(zilla);
+                
+                System.out.println(zilla1+" "+zilla2+" "+zilla3+" "+zilla4+" "+zilla5);
+                 
             }
+            scanner.close();
         }
         catch(Exception e)
         {
-            System.out.println(e);
+            //System.out.println(e);
         }
         
         System.out.print("Enter Destination Point(number) : ");

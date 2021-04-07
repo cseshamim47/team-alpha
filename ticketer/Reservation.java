@@ -16,30 +16,31 @@ public class Reservation extends ChooseRoot
     double returnCost;
     Reservation()
     {
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter Your Name : ");
         passengerName = input.nextLine();
         
         System.out.print("Enter Your Age : ");
         passengerAge = input.nextInt();
-        if(passengerAge <= 16 && passengerAge>=60)
+        /*if(passengerAge <= 16 && passengerAge>=60)
         {
             ////// implement of an decrease in money 200/-
-        }
+        }*/
         
-        System.out.print("Enter Departure Date : ");
+        System.out.print("Enter Departure Date : "); /// BUG HERE
         departureDate = input.nextLine();
         
-        System.out.print("Enter Departure From : ");
+        System.out.println("Enter Departure From : ");
         //startingFrom = input.nextLine();
         tl.startLocation();
         
-        System.out.print("Enter Your Destination : ");
+        System.out.println("Enter Your Destination : ");
         //destination = input.nextLine();
         tl.endLocation();
         
         System.out.print("Apply for Return Ticket? (Y/N) : ");
         returnTicket = input.nextLine();
-        returnTicket.toLowerCase();
+        returnTicket.toLowerCase(); //// BUG HERE
         if(returnTicket.equals('y'))
         {
             // 2 * total Cost
