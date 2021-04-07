@@ -1,0 +1,17 @@
+out/
+.idea/
+.cph/
+.vscode/
+bin/
+obj/
+*.o
+*.layout
+*.depend
+*.cbp
+GeekForGeeks/*
+!*.cpp
+*.iml
+*.exe
+*.bin
+*.class
+
