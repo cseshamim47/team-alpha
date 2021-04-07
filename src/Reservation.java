@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Reservation extends ChooseRoot
@@ -11,9 +12,13 @@ public class Reservation extends ChooseRoot
     String startingFrom,destination,returnTicket,returnDate;
     int passengerAge;
     double returnCost;
-    Reservation()
+    
+    public Reservation(){}
+    public Reservation(int i)
     {
         Scanner input = new Scanner(System.in);
+        Scanner inputs = new Scanner(System.in);
+        Scanner inputx = new Scanner(System.in);
         System.out.print("Enter Your Name : ");
         passengerName = input.nextLine();
         
@@ -24,8 +29,8 @@ public class Reservation extends ChooseRoot
             ////// implement of an decrease in money 200/-
         }*/
         
-        System.out.print("Enter Departure Date : "); /// BUG HERE
-        departureDate = input.nextLine();
+        System.out.print("Enter Departure Date : ");              /// BUG HERE
+        departureDate = inputs.nextLine();
         
         System.out.println("Enter Departure From : ");
         //startingFrom = input.nextLine();
@@ -36,14 +41,14 @@ public class Reservation extends ChooseRoot
         tl.endLocation();
         
         System.out.print("Apply for Return Ticket? (Y/N) : ");
-        returnTicket = input.nextLine();
-        returnTicket.toLowerCase(); //// BUG HERE
+        returnTicket = inputs.nextLine();
+        returnTicket.toLowerCase();                       //// BUG HERE
         if(returnTicket.equals('y'))
         {
             // 2 * total Cost
             returnCost = ((cr.travelCost+cr.foodCost+cr.acCost));
             System.out.print("Enter Return Date : ");
-            returnDate = input.nextLine();
+            returnDate = inputx.nextLine();
         }
         
         

@@ -1,3 +1,4 @@
+
 public class Plane extends Vehicle
 {
     private String seatNo,food;

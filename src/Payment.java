@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Payment 
@@ -27,7 +28,7 @@ public class Payment
                 accountNumber = input.nextLine();
                 
                  
-                System.out.println("Confirm? (Y/N)");
+                System.out.print("Confirm? (Y/N) : ");
                 String confirm = input.nextLine();
                 confirm = confirm.toLowerCase();
                 if(confirm.equals("y"))
@@ -36,6 +37,7 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                break;
     
             }
             
@@ -46,7 +48,7 @@ public class Payment
                 accountNumber = input.nextLine();
                 
                  
-                System.out.println("Confirm? (Y/N)");
+                System.out.print("Confirm? (Y/N)");
                 String confirm = input.nextLine();
                 confirm = confirm.toLowerCase();
                 if(confirm.equals("y"))
@@ -55,6 +57,7 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                break;
     
             }
             
@@ -64,7 +67,7 @@ public class Payment
                 System.out.print("Enter Credit Card Number : ");
                 accountNumber = input.nextLine();
                 
-                System.out.println("Confirm? (Y/N)");
+                System.out.print("Confirm? (Y/N)");
                 String confirm = input.nextLine();
                 confirm = confirm.toLowerCase();
                 if(confirm.equals("y"))
@@ -74,9 +77,10 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                break;
     
             }
-            default:{System.out.println("Choose A Valid Option (1-3)");}
+            default:{System.out.println("Choose A Valid Option (1-3)");break;}
             
             
         }

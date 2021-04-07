@@ -1,3 +1,4 @@
+
 public class Bus extends Vehicle
 {
     private String seatNo, ac;

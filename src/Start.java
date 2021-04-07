@@ -1,4 +1,6 @@
+
 import java.util.Scanner;
+import java.io.*;
 
 /*
 BUG IN RESERVATION LINE 30
@@ -38,7 +40,9 @@ public class Start {
         6. Confirmation Payment
         7. Print Ticket
          */
-        Reservation r = new Reservation();
+        Reservation r = new Reservation(1);
+        System.out.println("Enter Any Key to Continue.......");
+        int z = input.nextInt();
         cls();
         System.out.println("Choose Your Root --> ");
         System.out.println("1. Bus");
@@ -49,8 +53,12 @@ public class Start {
         int root = input.nextInt();
         cls(); 
         ChooseRoot cr = new ChooseRoot(root);
+        System.out.println("Enter Any Key to Continue.......");
+        int zz = input.nextInt();
         cls();
+        
         CostCalculation cc = new CostCalculation();
+        
 
         System.out.println("Choose Payment Method -->");
         System.out.println("1. Bkash");
@@ -60,8 +68,12 @@ public class Start {
         int choice = input.nextInt();
         //cls();
         Payment p = new Payment(choice);
+        System.out.println("Enter Any Key to Continue.......");
+        int zzz = input.nextInt();
         cls();
         PrintTicket pt = new PrintTicket();
+        System.out.println("Enter Any Key to Continue.......");
+        int zzzz = input.nextInt();
 
     }
 

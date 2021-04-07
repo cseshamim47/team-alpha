@@ -1,3 +1,4 @@
+
 public class Ship extends Vehicle
 {
     private String seatNo,food, ac;
