@@ -1,6 +1,3 @@
-
-package ticketer;
-
 public class CostCalculation  extends Reservation
 {
     double totalCost;

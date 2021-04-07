@@ -1,7 +1,4 @@
-package ticketer;
-
 import java.util.Scanner;
-import java.io.*;
 
 /*
 BUG IN RESERVATION LINE 30

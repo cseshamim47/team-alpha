@@ -1,6 +1,3 @@
-
-package ticketer;
-
 import java.util.Scanner;
 
 public class Payment 

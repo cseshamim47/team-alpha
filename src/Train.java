@@ -1,13 +1,10 @@
-
-package ticketer;
-
-public class Ship extends Vehicle
+public class Train extends Vehicle
 {
     private String seatNo,food, ac;
     
-    public Ship(){}//// Empty Constructor
+    public Train(){}//// Empty Constructor
     /// Parametrized Constructor Below
-    public Ship(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String food,String ac)
+    public Train(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String food,String ac)
     {
         super(vehicleName,vehicleType,member,vehicleNo);
         this.seatNo =seatNo;
@@ -48,6 +45,7 @@ public class Ship extends Vehicle
     {
        return ac;
     }
+    
     
     
 }

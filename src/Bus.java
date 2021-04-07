@@ -1,17 +1,13 @@
-
-package ticketer;
-
-public class Train extends Vehicle
+public class Bus extends Vehicle
 {
-    private String seatNo,food, ac;
+    private String seatNo, ac;
     
-    public Train(){}//// Empty Constructor
+    public Bus(){}//// Empty Constructor
     /// Parametrized Constructor Below
-    public Train(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String food,String ac)
+    public Bus(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String ac)
     {
         super(vehicleName,vehicleType,member,vehicleNo);
         this.seatNo =seatNo;
-        this.food =food; // (Y/N)
         this.ac =ac; // (Y/N)
     }
     
@@ -21,12 +17,7 @@ public class Train extends Vehicle
     {
        this.seatNo =seatNo; 
     }
-    
-    public void setFood(String food)
-    {
-       this.food =food; 
-    }
-    
+
     public void setAc(String seatNo)
     {
        this.ac =ac; 
@@ -37,11 +28,6 @@ public class Train extends Vehicle
     public String getSeatNo()
     {
        return seatNo;
-    }
-    
-    public String getFood()
-    {
-       return food; 
     }
     
     public String getAc()

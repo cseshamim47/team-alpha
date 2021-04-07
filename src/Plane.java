@@ -1,17 +1,15 @@
-
-package ticketer;
-
-public class Bus extends Vehicle
+public class Plane extends Vehicle
 {
-    private String seatNo, ac;
+    private String seatNo,food;
     
-    public Bus(){}//// Empty Constructor
+    public Plane(){}//// Empty Constructor
     /// Parametrized Constructor Below
-    public Bus(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String ac)
+    public Plane(String vehicleName,String vehicleType,String member,String vehicleNo,String seatNo,String food)
     {
         super(vehicleName,vehicleType,member,vehicleNo);
         this.seatNo =seatNo;
-        this.ac =ac; // (Y/N)
+        this.food =food; // (Y/N)
+        
     }
     
     /// Setter Methods
@@ -20,10 +18,10 @@ public class Bus extends Vehicle
     {
        this.seatNo =seatNo; 
     }
-
-    public void setAc(String seatNo)
+    
+    public void setFood(String food)
     {
-       this.ac =ac; 
+       this.food =food; 
     }
     
     ///// Getter Methods
@@ -33,10 +31,11 @@ public class Bus extends Vehicle
        return seatNo;
     }
     
-    public String getAc()
+    public String getFood()
     {
-       return ac;
+       return food; 
     }
+
     
     
     
