@@ -1,6 +1,6 @@
+package ticketer;
 
 import java.util.Scanner;
-import java.io.*;
 
 /*
 BUG IN RESERVATION LINE 30
@@ -23,6 +23,13 @@ public class Start {
 
     public static void main(String[] args) {
 
+        try{
+            Login login = new Login();
+        }catch (Exception e){
+            System.out.print("");
+        }
+
+
         Scanner input = new Scanner(System.in);
 
         /*
@@ -41,20 +48,21 @@ public class Start {
         7. Print Ticket
          */
         Reservation r = new Reservation(1);
-        System.out.println("Enter Any Key to Continue.......");
-        int z = input.nextInt();
+        System.out.print("Enter Any Key to Continue.......");
+        input.nextLine();
         cls();
-        System.out.println("Choose Your Root --> ");
-        System.out.println("1. Bus");
-        System.out.println("2. Train");
-        System.out.println("3. Plane");
-        System.out.println("4. Ship");
-        System.out.print("Enter Your Choice : ");
+        System.out.println("                      Choose Your Root --> ");
+        System.out.println("                             1. Bus");
+        System.out.println("                             2. Train");
+        System.out.println("                             3. Plane");
+        System.out.println("                             4. Ship");
+        System.out.print("                        Enter Your Choice : ");
         int root = input.nextInt();
         cls(); 
         ChooseRoot cr = new ChooseRoot(root);
-        System.out.println("Enter Any Key to Continue.......");
-        int zz = input.nextInt();
+        System.out.print("Enter Any Key to Continue.......");
+        input.nextLine();
+        input.nextLine();
         cls();
         
         CostCalculation cc = new CostCalculation();
@@ -69,11 +77,12 @@ public class Start {
         //cls();
         Payment p = new Payment(choice);
         System.out.println("Enter Any Key to Continue.......");
-        int zzz = input.nextInt();
+        input.nextLine();
+        input.nextLine();
         cls();
         PrintTicket pt = new PrintTicket();
-        System.out.println("Enter Any Key to Continue.......");
-        int zzzz = input.nextInt();
+        //System.out.println("Enter Any Key to Continue.......");
+        //input.nextLine();
 
     }
 

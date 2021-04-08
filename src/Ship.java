@@ -1,3 +1,4 @@
+package ticketer;
 
 public class Ship extends Vehicle
 {

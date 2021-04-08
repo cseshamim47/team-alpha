@@ -1,3 +1,4 @@
+package ticketer;
 
 import java.util.Scanner;
 
@@ -37,6 +38,7 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                else{System.exit(0);}
                 break;
     
             }
@@ -57,6 +59,7 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                else{System.exit(0);}
                 break;
     
             }
@@ -77,6 +80,7 @@ public class Payment
                 System.out.println("|        PAYMENT SUCCESSFUL !!!    | ");
                 System.out.println("-----------------------------------");
                 }
+                else{System.exit(0);}
                 break;
     
             }

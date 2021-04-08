@@ -27,24 +27,30 @@ public class ChooseRoot extends TravelLocation
             case 1:
             {
                 // Bus
+                Bus b = new Bus();
                 System.out.println("Enter Vehicle Type : Bus");
                 vehicleType = "Bus";
                
                 System.out.print("Enter Respective Company Name : ");
                 vehicleName = input.nextLine();
                 
+                
                 System.out.print("Enter member amount : ");
                 member = input.nextLine();
+                
                 
                 System.out.print("Enter Vehicle Number : ");
                 vehicleNo = input.nextLine();
                 
+                
                 System.out.print("Enter Seat Number : ");
                 seatNo = input.nextLine();
+                
                 
                 System.out.print("AC/Non-AC (Y/N) : ");
                 ac = input.nextLine();
                 ac = ac.toLowerCase();
+                
                 
                 if(ac.equals('y'))
                 {
@@ -56,11 +62,19 @@ public class ChooseRoot extends TravelLocation
                 confirm = confirm.toLowerCase();
                 if(confirm.equals("y"))
                 {
-                Bus b1 = new Bus(vehicleName,vehicleType,member,vehicleNo,seatNo,ac);
-                System.out.println("----------------------------------------------");
-                System.out.println("               TICKET CONFIRMED !!            |");
-                System.out.println("----------------------------------------------");
+                    //Bus b1 = new Bus(vehicleName,vehicleType,member,vehicleNo,seatNo,ac);
+                    b.setVehicleType(vehicleType);
+                    b.setVehicleName(vehicleName);
+                    b.setMember(member);
+                    b.setVehicleNo(vehicleNo);
+                    b.setSeatNo(seatNo);
+                    b.setAc(ac);
+                    
+                    System.out.println("----------------------------------------------");
+                    System.out.println("               TICKET CONFIRMED !!            |");
+                    System.out.println("----------------------------------------------");
                 }
+                else{System.exit(0);}
                 break;
             }
             
@@ -113,6 +127,7 @@ public class ChooseRoot extends TravelLocation
                 System.out.println("               TICKET CONFIRMED !!            |");
                 System.out.println("----------------------------------------------");
                 }
+                else{System.exit(0);}
                 
                 
                 break;    
@@ -157,6 +172,7 @@ public class ChooseRoot extends TravelLocation
                 System.out.println("               TICKET CONFIRMED !!            |");
                 System.out.println("----------------------------------------------");
                 }
+                else{System.exit(0);}
                 
                 
                 
@@ -214,6 +230,7 @@ public class ChooseRoot extends TravelLocation
                 System.out.println("               TICKET CONFIRMED !!            |");
                 System.out.println("----------------------------------------------");
                 }
+                else{System.exit(0);}
                 
                 
                 break;    
