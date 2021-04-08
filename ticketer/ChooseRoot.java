@@ -1,3 +1,4 @@
+package ticketer;
 
 import java.util.Scanner;
 

@@ -8,8 +8,6 @@ BUG IN MAIN METHOD LINE 60
 BUG IN RESERVATION LINE 43
 */
 
-
-
 public class Start {
 
     public static void cls() {
